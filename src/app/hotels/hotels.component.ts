@@ -21,6 +21,7 @@ export class HotelsComponent implements OnInit {
   public hotels$: Observable<IHotel[]>;
   public currentHotel: IHotel;
   public searchHotel: string;
+  public hotel: IHotel;
 
   public constructor(
     private hotelService: HotelsService,
@@ -35,8 +36,9 @@ export class HotelsComponent implements OnInit {
 
   public getHotels(event: PageEvent){
     this.hotels$ = this.hotelService.getHotels(event);
-    // TODO: set dafault hotels
-    // get first element on array
+    this.hotels$.subscribe( (hotel:  IHotel[]) => {
+      this.currentHotel = hotel[0];
+    });
   }
 
   public setHotel(hotel: IHotel): void {

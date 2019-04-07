@@ -15,7 +15,7 @@ export class HotelsService {
   ) { }
 
   public getHotels (event: PageEvent): Observable<IHotel[]> {
-    console.log(event);
+    // console.log(event);
 
     const headers: HttpHeaders = new HttpHeaders();
     headers.append('Content-Type', 'application/json');
