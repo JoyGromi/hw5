@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
-import { HotelListComponent } from './hotel-list/hotel-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HotelsComponent } from './hotels/hotels.component';
 import { ListComponent } from './hotels/list/list.component';
@@ -29,7 +28,6 @@ import { FavoriteComponent } from './hotels/favorite/favorite.component';
     FooterComponent,
     HeaderComponent,
     NavComponent,
-    HotelListComponent,
     HotelsComponent,
     ListComponent,
     WeatherComponent,
